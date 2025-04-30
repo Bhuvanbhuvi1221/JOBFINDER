@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobFinder Launch</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: 
+        linear-gradient(to right, rgba(20, 30, 48, 0.7), rgba(36, 59, 85, 0.7)),
+        url('banner.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      max-height: 60px;
+      height: 8vw;
+      z-index: 10;
+    }
+
+    .logo-left {
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo-right {
+      top: 20px;
+      right: 20px;
+    }
+
+    .logo-center {
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 80px;
+      height: 10vw;
+    }
+
+    /* FULL Background behind launch */
+    .launch-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.5; /* made it more visible */
+      z-index: 2;
+      filter: blur(1.5px); /* reduced blur */
+      pointer-events: none;
+    }
+
+    .center-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 5;
+    }
+
+    .launch-btn {
+      font-size: 24px;
+      padding: 15px 40px;
+      background: #00bfff;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+    }
+
+    .launch-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(0, 191, 255, 0.8);
+    }
+
+    .fade-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      opacity: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      transition: opacity 1s ease;
+    }
+
+    .fade-screen.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .transition-img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        max-height: 50px;
+      }
+
+      .launch-btn {
+        font-size: 20px;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full background image behind LAUNCH button -->
+  <img src="https://media.licdn.com/dms/image/v2/C5622AQGK_fmTXMysqg/feedshare-shrink_800/feedshare-shrink_800/0/1672577451503?e=2147483647&v=beta&t=aAZ5jiruyAhf4BKdFXQS6YFp_x5OVMpWaVpIK7Yy4Uk" alt="Launch Background" class="launch-bg">
+
+  <!-- Top Logos -->
+  <img src="https://iccams-presidencyuniversity.netlify.app/author_registration/images/WhitePresidency-University-Logo_madhu_16-04-21-01.png" alt="Presidency University" class="logo logo-center">
+
+  <!-- Center Launch Button -->
+  <div class="center-container">
+    <button class="launch-btn" onclick="launchEvent()">LAUNCH</button>
+  </div>
+
+  <!-- Fullscreen Transition -->
+  <div class="fade-screen" id="fadeScreen">
+    <img src="logo.png" alt="INNOMAPS" class="transition-img" onclick="redirectToMap()">
+  </div>
+
+  <script>
+    function launchEvent() {
+      const fadeScreen = document.getElementById('fadeScreen');
+      fadeScreen.classList.add('active');
+    }
+
+    function redirectToMap() {
+      window.location.href = "http://localhost:5501/";
+    }
+  </script>
+
+</body>
+</html>

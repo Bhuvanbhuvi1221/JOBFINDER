@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JobFinder</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#applybut").click(function(e){
+                e.preventDefault();
+                alert("Your Application submitted successfully. We'll get back to you soon!!");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">JobFinder</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Jobs</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="job-list.html" class="dropdown-item">Job List</a>
+                            <a href="job-detail.html" class="dropdown-item active">Job Detail</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Category</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404</a>
+                        </div>
+                    </div>
+                    <a href="profile.html" class="nav-item nav-link"> Profile</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="https://careers.adobe.com/us/en/apply?jobSeqNo=ADOBUSR152382EXTERNALENUS&step=1&stepname=personalInformation" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" style="font-size: small;">Post a Job<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+         <!-- Language Selector -->
+    
+
+
+        <!-- Header End -->
+        <div class="container-xxl py-5 bg-dark page-header mb-5">
+            <div class="container my-5 pt-5 pb-4">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Job Detail</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb text-uppercase">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Job Detail</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Job Detail Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-8">
+                        <div class="d-flex align-items-center mb-5">
+                            <img class="flex-shrink-0 img-fluid border rounded" src="img/Adobe.png" alt="" style="width: 80px; height: 80px;">
+                            <div class="text-start ps-4">
+                                <h3 class="mb-3">Data Engineer</h3>
+                                <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>San Jose, California, United States of America</span>
+                                <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <h4 class="mb-3">Job description</h4>
+                            <p>A Data Engineer designs, builds, and maintains systems that collect, store, and process large amounts of data. They create data pipelines, ensure data quality, and prepare data for analysis. Their work supports data scientists and analysts by providing clean, organized, and accessible data for business insights and decision-making.</p>
+                            <h4 class="mb-3">Responsibility</h4>
+                            <p>Here are the main responsibilities of a Data Engineer:</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Design and build reliable data pipelines.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Develop and manage databases and large-scale data systems.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Clean, organize, and transform raw data into usable formats.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Ensure data quality, security, and privacy.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Optimize data storage and retrieval for efficiency.</li>
+                            </ul>
+                            <h4 class="mb-3">Qualifications</h4>
+                            <p>Here are the main Qualifications of a Data Engineer</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Bachelor's or Master’s degree in Computer Science or a related engineering field.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>3+ years of experience in software engineering, building highly scalable and maintainable systems.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Strong programming skills in Scala, Java, or other strongly typed languages.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Experience working with large datasets and building ELT pipelines using Databricks, Snowflake, SQL, Python, and Jupyter Notebooks.</li>
+                                <li><i class="fa fa-angle-right text-primary me-2"></i>Solid data analysis and problem-solving skills.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="">
+                            <h4 class="mb-4">Apply For The Job</h4>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Portfolio Website">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="file" class="form-control bg-white">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" placeholder="Coverletter"></textarea>
+                                    </div>
+                                    <div class="col-12" >
+                                        <button class="btn btn-primary w-100" type="submit" id="applybut">Apply Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                 
+                    
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4">Job Summery</h4>
+                            <p><i class="fa fa-angle-right text-primary me-2"></i>Published On: 01 Jan, 2025</p>
+                            <p><i class="fa fa-angle-right text-primary me-2"></i>Vacancy: 123 Position</p>
+                            <p><i class="fa fa-angle-right text-primary me-2"></i>Job Nature: Full Time</p>
+                            <p><i class="fa fa-angle-right text-primary me-2"></i>Salary: $123 - $456</p>
+                            <p><i class="fa fa-angle-right text-primary me-2"></i>Location: San Jose, California, United States of America</p>
+                            <p class="m-0"><i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01 Jun, 2025</p>
+                        </div>
+                        <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
+                            <h4 class="mb-4">Company Detail</h4>
+                            <p class="m-0">Adobe is a global leader in digital experiences, founded in December 1982 by John Warnock and Charles Geschke. Headquartered in San Jose, California, Adobe is known for its iconic products like Photoshop, Illustrator, Acrobat Reader, Premiere Pro, and the Adobe Experience Cloud. The company’s mission is to change the world through digital experiences, empowering individuals, artists, and businesses to create and deliver powerful digital content. Adobe fosters a culture of innovation, creativity, diversity, and inclusion, and is consistently ranked as one of the best places to work globally. Its name comes from Adobe Creek, a stream that ran behind the house of one of the founders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Job Detail End -->
+
+
+        <!-- Footer Start -->
+<div class="container-fluid bg-dark footer pt-5 mt-5 wow fadeIn position-relative" data-wow-delay="0.1s"
+style="background-image: url('https://akm-img-a-in.tosshub.com/businesstoday/images/story/202307/logo-collage_4-sixteen_nine.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+<!-- Overlay -->
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+           background-color: rgba(255, 255, 255, 0.6); z-index: 0;"></div>
+
+<div class="container py-5 position-relative" style="z-index: 1;">
+   <div class="row g-5 text-dark">
+       <div class="col-lg-3 col-md-6">
+           <h5 class="text-dark mb-4">Company</h5>
+           <a class="btn btn-link text-dark" href="about.html">About Us</a>
+           <a class="btn btn-link text-dark" href="contact.html">Contact Us</a>
+           <a class="btn btn-link text-dark" href="#">Our Services</a>
+           <a class="btn btn-link text-dark" href="#">Privacy Policy</a>
+           <a class="btn btn-link text-dark" href="#">Terms & Condition</a>
+       </div>
+       <div class="col-lg-3 col-md-6">
+           <h5 class="text-dark mb-4">Quick Links</h5>
+           <a class="btn btn-link text-dark" href="about.html">About Us</a>
+           <a class="btn btn-link text-dark" href="contact.html">Contact Us</a>
+           <a class="btn btn-link text-dark" href="#">Our Services</a>
+           <a class="btn btn-link text-dark" href="#">Privacy Policy</a>
+           <a class="btn btn-link text-dark" href="#">Terms & Condition</a>
+       </div>
+       <div class="col-lg-3 col-md-6">
+           <h5 class="text-dark mb-4">Contact</h5>
+           <p class="mb-2 text-dark"><i class="fa fa-map-marker-alt me-3"></i>Presidency University, Bangalore, India</p>
+           <p class="mb-2 text-dark"><i class="fa fa-phone-alt me-3"></i>+918018226686</p>
+           <p class="mb-2 text-dark"><i class="fa fa-envelope me-3"></i>presidencyuniversity@gmail.com</p>
+           <div class="d-flex pt-2">
+               <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-twitter"></i></a>
+               <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+               <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-youtube"></i></a>
+               <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+           </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+           <h5 class="text-dark mb-4">We'll get back to you soon</h5>
+           <div class="position-relative mx-auto" style="max-width: 400px;">
+               <input class="form-control bg-transparent text-dark border-dark w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+               <button type="button" class="btn btn-dark py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="container position-relative" style="z-index: 1;">
+   <div class="copyright text-dark">
+       <div class="row">
+           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+               &copy; <a class="border-bottom text-dark" href="#">Job Finder</a>, All Right Reserved. 
+               Designed By <a class="border-bottom text-dark" href="#" style="text-decoration: none;">Bhuvan A</a>
+           </div>
+           <div class="col-md-6 text-center text-md-end">
+               <div class="footer-menu">
+                   <a class="text-dark" href="index.html">Home</a>
+                   <a class="text-dark" href="#">Cookies</a>
+                   <a class="text-dark" href="#">Help</a>
+                   <a class="text-dark" href="#">FQAs</a>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+<!-- Footer End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
